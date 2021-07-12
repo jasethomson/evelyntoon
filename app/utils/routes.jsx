@@ -7,10 +7,7 @@ import Work from "../pages/work";
 export const Routes = nav => {
   const routes = [
     { title: "About", component: About, path: "/about" },
-    { title: "Contact", component: Contact, path: "/contact" },
-    { title: "SEO", component: Work, path: "/work" },
-    { title: "Print", component: Work, path: "/work" },
-    { title: "Social", component: Work, path: "/work" }
+    { title: "Contact", component: Contact, path: "/contact" }
   ];
   const landing = { title: "Home", component: Landing, path: "/" };
   nav ? routes.unshift(landing) : routes.push(landing);
@@ -18,7 +15,11 @@ export const Routes = nav => {
 }
 
 export const PostRoutes = () => {
-  return [];
+  return [
+    { title: "SEO", component: Work, path: "/work" },
+    { title: "Print", component: Work, path: "/work" },
+    { title: "Social", component: Work, path: "/work" }
+  ];
 }
 
 export const NoNavRoutes = () => {
