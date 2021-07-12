@@ -1,0 +1,57 @@
+$currPage: page-landing;
+
+.#{$currPage} {
+  display: flex;
+  flex-direction: row;
+  .insert-101 {
+    height: 100%;
+    width: 100%;
+  }
+  .insert-101-a {
+    .insert-102-a {
+      margin: 13rem auto;
+      max-width: 92%;
+      h1 {
+        font-size: 7rem;
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  .insert-101-b {
+    display: flex;
+    justify-content: center;
+    background: black;
+    .insert-102-a {
+      height: 200px;
+      padding-top: 21rem;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      .insert-103 {
+        a {
+          letter-spacing: 5px;
+          white-space: nowrap;
+          font-size: 1.4em;
+          background-color: white;
+          outline: none;
+          border: black solid 2px;
+          box-shadow: 4px 4px black;
+          padding: 16px 15px;
+          font-family: 'Futura', sans-serif;
+          min-width: 310px;
+          position: relative;
+          transition: 400ms;
+          font-weight: lighter;
+          display: inline-block;
+          text-align: center;
+          align-items: flex-start;
+          font-style: normal!important;
+          color: black!important;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -9,12 +9,15 @@ const Landing = props => {
         <Header className="insert-102 insert-102-a" title={"CONTENT COORDINATOR"} />
       </div>
       <div className="insert-101 insert-101-b">
-        <button>
-          <Link to="/work">View My Work</Link>
-        </button>
-        <button>
-          <a target="_blank" href="resume.pdf">My Resume</a>
-        </button>
+        <div className="insert-102 insert-102-a">
+          <div className="insert-103 insert-103-a">
+            <Link to="/work">View My Work</Link>
+          </div>
+          <div className="insert-103 insert-103-b">
+            <a target="_blank" href="resume.pdf">My Resume</a>
+          </div>
+        </div>
+
       </div>
     </div>
 

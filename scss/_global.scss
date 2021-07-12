@@ -9,11 +9,23 @@ body {
   color: $font-color;
 }
 
+#app {
+  height: 100%;
+}
+
+.page {
+  height: calc(100% - #{$nav-height});
+}
+
 a {
   color: $font-color;
   &:hover {
     text-decoration: none;
   }
+}
+
+button {
+  width: auto;
 }
 
 .hidden {
