@@ -1,0 +1,142 @@
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #2b2b2b; }
+
+a {
+  color: #2b2b2b; }
+  a:hover {
+    text-decoration: none; }
+
+.hidden {
+  display: none !important; }
+
+.none {
+  visibility: hidden !important; }
+
+.oneHundo {
+  height: 100% !important; }
+
+img {
+  max-width: 100%; }
+
+h1 {
+  font-size: calc(22px + (40 - 22) * ((100vw - 300px) / (1600 - 300))); }
+
+h2 {
+  font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1600 - 300))); }
+
+h3 {
+  font-size: calc(22px + (28 - 22) * ((100vw - 300px) / (1600 - 300))); }
+
+h4 {
+  font-size: calc(22px + (24 - 22) * ((100vw - 300px) / (1600 - 300))); }
+
+h5 {
+  font-size: calc(22px + (20 - 22) * ((100vw - 300px) / (1600 - 300))); }
+
+header {
+  height: 56px;
+  padding: 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  header .headerTitle {
+    font-size: 2rem; }
+  header nav {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    header nav ul {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style-type: none;
+      padding-left: 0rem;
+      margin-bottom: 0rem; }
+      header nav ul li {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0rem 1.5rem; }
+        header nav ul li a {
+          text-decoration: none; }
+
+.homeContainer .homeworkContainer {
+  padding: 0rem 1rem;
+  padding-top: 4rem; }
+  .homeContainer .homeworkContainer .kardContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .homeContainer .homeworkContainer .kardContent .kardContentHeader {
+      height: 56px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 1.6rem; }
+    .homeContainer .homeworkContainer .kardContent .kardContentBody {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-top: 2rem; }
+      .homeContainer .homeworkContainer .kardContent .kardContentBody .kard {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        width: calc(25% - 4rem);
+        margin: 0rem 2rem;
+        -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+                box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
+      .homeContainer .homeworkContainer .kardContent .kardContentBody .kardImage img {
+        height: 458px;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+      .homeContainer .homeworkContainer .kardContent .kardContentBody .kardText {
+        padding: 1rem;
+        min-height: 168px; }
+        .homeContainer .homeworkContainer .kardContent .kardContentBody .kardText .kardHeader {
+          padding-bottom: 1rem;
+          font-weight: bold; }
+
+/*# sourceMappingURL=project.css.map */

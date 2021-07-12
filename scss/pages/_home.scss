@@ -1,0 +1,13 @@
+$currPage: homeContainer;
+// $pageBreak: 900px;
+// $paddingBreak: 767px;
+
+.#{$currPage} {
+  .homeworkContainer {
+    padding: 0rem 1rem;
+    padding-top: 4rem;
+    .kardContent {
+      @include kards;
+    }
+  }
+}
