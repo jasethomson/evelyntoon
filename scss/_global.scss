@@ -14,7 +14,7 @@ body {
 }
 
 .page {
-  height: calc(100% - #{$nav-height});
+  height: calc(100% - (#{$nav-height} + #{$nav-border-height}));
 }
 
 a {

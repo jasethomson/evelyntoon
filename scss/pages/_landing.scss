@@ -22,7 +22,7 @@ $currPage: page-landing;
   .insert-101-b {
     display: flex;
     justify-content: center;
-    background: black;
+    background: $first-color;
     .insert-102-a {
       height: 200px;
       padding-top: 16rem;
@@ -36,8 +36,8 @@ $currPage: page-landing;
           font-size: 1.4em;
           background-color: white;
           outline: none;
-          border: black solid 2px;
-          box-shadow: 4px 4px black;
+          border: $second-color solid 2px;
+          box-shadow: 4px 4px $second-color;
           padding: 16px 15px;
           font-family: 'Futura', sans-serif;
           min-width: 310px;
@@ -47,13 +47,11 @@ $currPage: page-landing;
           display: inline-block;
           text-align: center;
           align-items: flex-start;
-          font-style: normal!important;
-          color: black!important;
           text-decoration: none;
           &:hover {
-            background-color: black;
-            color: white!important;
-            border: white solid 2px;
+            background-color: $third-color;
+            // color: white!important;
+            // border: white solid 2px;
           }
         }
       }
