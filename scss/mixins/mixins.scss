@@ -1,0 +1,43 @@
+
+
+@mixin kards {
+  display: flex;
+  flex-direction: column;
+  .kardContentHeader {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+  .kardContentBody {
+    display: flex;
+    padding-top: 2rem;
+    .kard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: $border;
+      width: calc(25% - 4rem);
+      margin: 0rem 2rem;
+      box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    }
+    .kardImage {
+      img {
+        height: 458px;
+        width: 100%;
+        border-bottom: $border;
+      }
+    }
+    .kardText {
+      padding: 1rem;
+      min-height: 168px;
+      .kardHeader {
+        padding-bottom: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+}
