@@ -1,0 +1,44 @@
+$currPage: page-about;
+
+.#{$currPage} {
+  display: flex;
+  flex-direction: row;
+  h1 {
+    color: #914C39;
+  }
+  p {
+    color: #3f4f42;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .insert-101 {
+    height: 100%;
+    width: 100%;
+  }
+  .insert-101-a {
+    .insert-innner {
+      margin: 3rem 5rem;
+    }
+    li {
+      font-size: 15px;
+      line-height: 24px;
+      p {
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+  }
+  .insert-101-b {
+    .insert-inner {
+      margin-top: 8rem;
+    }
+    .insert-102 {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      img {
+        height: 24vw;
+      }
+    }
+  }
+}
