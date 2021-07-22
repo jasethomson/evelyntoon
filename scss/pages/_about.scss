@@ -7,9 +7,10 @@ $currPage: page-about;
     color: #914C39;
   }
   p {
-    color: #3f4f42;
+    color: $third-color;
     font-size: 22px;
     line-height: 32px;
+    font-weight: 600;
   }
   .insert-101 {
     height: 100%;
@@ -22,9 +23,12 @@ $currPage: page-about;
     li {
       font-size: 15px;
       line-height: 24px;
+
+    font-weight: 600;
       p {
         font-size: 15px;
         line-height: 24px;
+        font-weight: 600;
       }
     }
   }
