@@ -1,0 +1,33 @@
+$currPage: page-contact;
+
+.#{$currPage} {
+
+  .insert-101 {
+    width: fit-content;
+    margin: 0rem auto;
+  }
+  .insert-101-a {
+    padding: 75px 0px;
+    h1 {
+      font-size: 3.5em;
+    }
+  }
+  .insert-101-b {
+    min-width: 326px;
+    padding: 40px;
+    border:  $second-color solid 2px;
+    box-shadow: -4px 4px  $second-color;
+
+    .insert-102 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .5rem 0rem;
+      .insert-103-b {
+        a {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

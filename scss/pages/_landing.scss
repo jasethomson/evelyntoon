@@ -16,6 +16,8 @@ $currPage: page-landing;
         width: fit-content;
         margin: 0;
         padding: 0;
+        color: $first-color;
+        text-shadow: 8px 7px $second-color;
       }
     }
   }
@@ -23,13 +25,14 @@ $currPage: page-landing;
     display: flex;
     justify-content: center;
     background: $first-color;
-    .insert-102-a {
-      height: 200px;
+    .insert-103-a {
       padding-top: 16rem;
       justify-content: space-around;
       display: flex;
       flex-direction: column;
-      .insert-103 {
+      align-items: center;
+      .insert-104 {
+        padding-bottom: 2.4rem;
         a {
           letter-spacing: 5px;
           white-space: nowrap;
@@ -49,9 +52,20 @@ $currPage: page-landing;
           align-items: flex-start;
           text-decoration: none;
           &:hover {
-            background-color: $third-color;
+            background-color: $first-color;
           }
         }
+      }
+    }
+    .insert-104-c {
+      font-size: 21px;
+      padding-bottom: 0rem;
+      border-top: 3px solid $second-color;
+      p {
+        margin: 0px;
+        margin-top: 3vw;
+        color: $third-color;
+        font-weight: bolder;
       }
     }
   }
