@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Routes, PostRoutes } from '../utils/routes';
+import { HashLink } from 'react-router-hash-link';
 
 const Nav = () => {
   const routes = Routes(true);
@@ -17,7 +18,7 @@ const Nav = () => {
       </div>
       <div className="insert-101 insert-101-c">
         <ul>
-          {postRoutes.map(route => <li key={`link-${route.title}`}><Link to={route.path}>{route.title}</Link></li>)}
+          {postRoutes.map(route => <li key={`link-${route.title}`}><HashLink to={route.path}>{route.title}</HashLink></li>)}
         </ul>
       </div>
 

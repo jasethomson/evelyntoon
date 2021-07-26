@@ -1,57 +1,64 @@
 header {
-  height: $nav-height;
-  padding: 0rem 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: $nav-border;
-  .headerTitle {
-    font-size: 2rem;
-  }
-  nav {
-    height: 100%;
-    width: 100%;
+  position: fixed;
+  width: 100%;
+  background-color: $background-color;
+  .headerInner {
+    height: $nav-height;
+    padding: 0rem 1rem;
     display: flex;
     justify-content: space-between;
-    .insert-101 {
-      display: flex;
-      align-items: center;
+    align-items: center;
+    border-bottom: $nav-border;
+    .headerTitle {
+        font-size: 2rem;
     }
-    .insert-101-a,
-    .insert-101-c {
-      width: 100%;
-    }
-    .insert-101-b {
-      width: fit-content;
-      white-space: nowrap;
-      border-left: $nav-vertical-border;
-      border-right: $nav-vertical-border;
-      background-color: $fifth-color;
-      h3 {
-        margin: 0px;
-        padding: 0rem .5rem;
-      }
-    }
-    ul {
+    nav {
       height: 100%;
       width: 100%;
       display: flex;
-      justify-content: space-around;
-      list-style-type: none;
-      padding-left: 0rem;
-      margin: 0rem;
-      li {
-        height: 100%;
+      justify-content: space-between;
+      .insert-101 {
         display: flex;
         align-items: center;
-            padding: 0rem 1.5rem;
-        a {
-          text-decoration: none;
-          font-weight: 600;
-          font-size: $nav-font;
+      }
+      .insert-101-a,
+      .insert-101-c {
+        width: 100%;
+      }
+      .insert-101-b {
+        width: fit-content;
+        white-space: nowrap;
+        border-left: $nav-vertical-border;
+        border-right: $nav-vertical-border;
+        background-color: $fifth-color;
+        h3 {
+          margin: 0px;
+          padding: 0rem .5rem;
+        }
+      }
+      ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding-left: 0rem;
+        margin: 0rem;
+        li {
+          height: 100%;
+          display: flex;
+          align-items: center;
+              padding: 0rem 1.5rem;
+          a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: $nav-font;
+            &:hover {
+              color: $font-color-dark;
+            }
+          }
         }
       }
     }
-
   }
 }
