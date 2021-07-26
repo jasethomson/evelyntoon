@@ -3,7 +3,8 @@ $first-color: #e3bb9d;
 $second-color: #a75e2f;
 $third-color:  #926e68;
 $fourth-color: #d4c88e;
-$font-color-dark: #2b2b2b;
+$fifth-color: #f5eee9;
+$font-color-dark: #4b2a15;
 $font-color-light: white !global;
 $background-color: #e8d9ce;
 
@@ -19,6 +20,7 @@ $nav-font: 18px;
 $nav-height: 94px;
 $nav-border-height: 2px;
 $nav-border: $nav-border-height solid $second-color;
+$nav-vertical-border: 1px solid $second-color;
 
 //Border
 $border: 1px solid rgba(0,0,0,.125);

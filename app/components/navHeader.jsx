@@ -5,7 +5,9 @@ import PostNav from './postnav';
 const NavHeader = props => {
   return (
     <header>
-      <Nav />
+      <div className="headerInner">
+        <Nav />
+      </div>
     </header>
   );
 }

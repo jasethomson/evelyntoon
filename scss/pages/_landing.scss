@@ -12,12 +12,13 @@ $currPage: page-landing;
       margin: 13rem auto;
       max-width: 92%;
       h1 {
-        font-size: 6vw;
+        font-size: 5vw;
+        text-align: center;
         width: fit-content;
         margin: 0;
         padding: 0;
         color: $first-color;
-        text-shadow: 8px 7px $second-color;
+        text-shadow: 4px 3px $second-color;
       }
     }
   }
@@ -37,7 +38,7 @@ $currPage: page-landing;
           letter-spacing: 5px;
           white-space: nowrap;
           font-size: 1.4em;
-          background-color: white;
+          background-color: $fifth-color;
           outline: none;
           border: $second-color solid 2px;
           box-shadow: 4px 4px $second-color;

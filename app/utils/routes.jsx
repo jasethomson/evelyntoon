@@ -16,12 +16,14 @@ export const Routes = nav => {
 
 export const PostRoutes = () => {
   return [
-    { title: "SEO", component: Work, path: "/work" },
-    { title: "Print", component: Work, path: "/work" },
-    { title: "Social", component: Work, path: "/work" }
+    { title: "SEO", component: Work, path: "work#seo" },
+    { title: "Print", component: Work, path: "work#print" },
+    { title: "Social", component: Work, path: "work#social" }
   ];
 }
 
 export const NoNavRoutes = () => {
-  return [];
+  return [
+    { title: "", component: Work, path: "/work" },
+  ];
 }
