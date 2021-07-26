@@ -24,8 +24,9 @@ header {
     .insert-101-b {
       width: fit-content;
       white-space: nowrap;
-      border-left: $nav-border;
-      border-right: $nav-border;
+      border-left: $nav-vertical-border;
+      border-right: $nav-vertical-border;
+      background-color: $fifth-color;
       h3 {
         margin: 0px;
         padding: 0rem .5rem;
