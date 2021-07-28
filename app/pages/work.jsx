@@ -7,7 +7,7 @@ const Work = props => {
     <div className="page page-work">
       <div className="insert-100 insert-100-a">
         <div className="insert-100-insert-a">
-          <Modal buttonLabel="modal" className="modal1" />
+
           <Header title="My Portfolio" />
         </div>
         <div className="insert-100-insert-b">
@@ -36,7 +36,12 @@ const Work = props => {
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
-                <img src="images/roseheads.png" alt="Amazon A+ Content Rose Heads" />
+                <Modal
+                  modalHeader={"Amazon A+ Content Copy - Artificial Rose Heads"}
+                  buttonLabel={<img src="images/roseheads.png" alt="Amazon A+ Content Rose Heads" />}
+                  modalBody={<img src="images/roseheads.png" alt="Amazon A+ Content Rose Heads" />}
+                  className="modal1"
+                />
               </div>
               <div className="insert-104 insert-104-b">
                 <img src="images/roseheadsCopy.png" alt="Amazon A+ Content Rose Heads" />
