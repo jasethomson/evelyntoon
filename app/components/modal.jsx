@@ -8,7 +8,8 @@ const ModalExample = (props) => {
     className,
     modalBody,
     modalHeader,
-    modalFooter
+    modalFooter,
+    size
   } = props;
 
   const [modal, setModal] = useState(false);
@@ -18,7 +19,7 @@ const ModalExample = (props) => {
   return (
     <div>
       <button className={"modalOpener"} onClick={toggle}>{buttonLabel}</button>
-      <Modal isOpen={modal} modalTransition={{ timeout: 200 }} backdropTransition={{ timeout: 0 }}
+      <Modal isOpen={modal} modalTransition={{ timeout: 200 }} backdropTransition={{ timeout: 0 }} size={size}
         toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>{modalHeader}</ModalHeader>
         <ModalBody>
@@ -30,7 +31,7 @@ const ModalExample = (props) => {
           <Button color="secondary" onClick={toggle}>Cancel</Button> */}
         </ModalFooter>
       </Modal>
-    </div>
+    </div >
   );
 }
 
