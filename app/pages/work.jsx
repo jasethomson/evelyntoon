@@ -4,6 +4,14 @@ import Header from '../components/header';
 const Work = props => {
   return (
     <div className="page page-work">
+      <div className="insert-100 insert-100-a">
+        <div className="insert-100-insert-a">
+          <Header title="My Portfolio" />
+        </div>
+        <div className="insert-100-insert-b">
+          More samples of my work can be provided upon request.
+        </div>
+      </div>
       <section id="seo" className="sec sec-1">
         <div className="insert-101 insert-101-a">
           <Header title="SEO" />
@@ -13,11 +21,15 @@ const Work = props => {
         </div>
         <div className="insert-101 insert-101-c">
           <div className="insert-102 insert-102-a">
+            <div className="insert-103 insert-103-z">
+              <h4>Amazon A+ Content Copy</h4>
+            </div>
             <div className="insert-103 insert-103-a">
+              <span>Artificial Rose Heads</span>
               <a
                 href="https://www.amazon.com/dp/B07BLTPVN9?pd_rd_i=B07BLTPVN9&pd_rd_w=XSOv2&pf_rd_p=ee186ce0-6bf7-4893-85b9-f3368b019e0f&pd_rd_wg=w7SE9&pf_rd_r=193RNGC13W5RFD866270&pd_rd_r=98629f92-8e6f-4207-bb0d-5e8ddd200f7d"
                 target="_blank">
-                Amazon A+ Content Copy - Artificial Rose Heads (click here for more details)
+                (click here for more details)
             </a>
             </div>
             <div className="insert-103 insert-103-b">
@@ -30,11 +42,15 @@ const Work = props => {
             </div>
           </div>
           <div className="insert-102 insert-102-b">
+            <div className="insert-103 insert-103-z">
+              <h4>Amazon A+ Content Copy</h4>
+            </div>
             <div className="insert-103 insert-103-a">
+              <span>Notebooks</span>
               <a
                 href="https://www.amazon.com/Kraft-Notebook-Bulk-Different-Happiness/dp/B079JHHYGT/ref=sr_1_15?dchild=1&keywords=inspirational+notebooks&qid=1627274507&sr=8-15"
                 target="_blank">
-                Amazon A+ Content Copy - Notebooks (click here for more details)
+                (click here for more details)
             </a>
             </div>
             <div className="insert-103 insert-103-b">
@@ -47,11 +63,15 @@ const Work = props => {
             </div>
           </div>
           <div className="insert-102 insert-102-c">
+            <div className="insert-103 insert-103-z">
+              <h4>Juvo Plus Product Description Page</h4>
+            </div>
             <div className="insert-103 insert-103-a">
+              <span>Sewing Basket</span>
               <a
                 href="https://www.amazon.com/Vintage-Organizer-Supplies-Notions-Rectangular/dp/B01HJKRE1Q?ref_=ast_sto_dp"
                 target="_blank">
-                Juvo Plus Product Description Page - Sewing Basket (click here for more details)
+                (click here for more details)
               </a>
             </div>
             <div className="insert-103 insert-103-b">
@@ -62,7 +82,7 @@ const Work = props => {
           </div>
           <div className="insert-102 insert-102-d">
             <div className="insert-103 insert-103-a">
-              Torrid Paid Ads
+              <h4>Torrid Paid Ads</h4>
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
@@ -78,7 +98,7 @@ const Work = props => {
           </div>
           <div className="insert-102 insert-102-e">
             <div className="insert-103 insert-103-a">
-              Torrid Product Description Pages (PDPs)
+              <h4>Torrid Product Description Pages (PDPs)</h4>
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
@@ -91,7 +111,7 @@ const Work = props => {
           </div>
           <div className="insert-102 insert-102-f">
             <div className="insert-103 insert-103-a">
-              Unique Vintage Product Description Pages (PDPs)
+              <h4>Unique Vintage Product Description Pages (PDPs))</h4>
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
@@ -117,7 +137,7 @@ const Work = props => {
         <div className="insert-101 insert-101-c">
           <div className="insert-102 insert-102-a">
             <div className="insert-103 insert-103-a">
-              Torrid Spring 2020 Mailer
+              <h4>Torrid Spring 2020 Mailer</h4>
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
@@ -143,7 +163,7 @@ const Work = props => {
         <div className="insert-101 insert-101-c">
           <div className="insert-102 insert-102-a">
             <div className="insert-103 insert-103-a">
-              Torrid Email - Star Wars
+              <h4>Torrid Email - Star Wars</h4>
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
@@ -153,7 +173,7 @@ const Work = props => {
           </div>
           <div className="insert-102 insert-102-b">
             <div className="insert-103 insert-103-a">
-              Torrid Instagram Story - Cinderella
+              <h4>Torrid Instagram Story - Cinderella</h4>
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
@@ -163,7 +183,7 @@ const Work = props => {
           </div>
           <div className="insert-102 insert-102-c">
             <div className="insert-103 insert-103-a">
-              Torrid Instagram Story - Birds of Prey
+              <h4>Torrid Instagram Story - Birds of Prey</h4>
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
