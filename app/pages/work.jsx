@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from '../components/header';
+import Modal from '../components/modal';
 
 const Work = props => {
   return (
     <div className="page page-work">
       <div className="insert-100 insert-100-a">
         <div className="insert-100-insert-a">
+          <Modal buttonLabel="modal" className="modal1" />
           <Header title="My Portfolio" />
         </div>
         <div className="insert-100-insert-b">
