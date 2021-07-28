@@ -54,6 +54,7 @@ $currPage: page-landing;
           text-decoration: none;
           &:hover {
             background-color: $first-color;
+            color: $font-color-dark;
           }
         }
       }

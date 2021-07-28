@@ -15,8 +15,8 @@ body {
 }
 
 .page {
-  height: calc(100% - (#{$nav-height} + #{$nav-border-height}));
-  padding-top: calc(#{$nav-height} + #{$nav-border-height});
+  height: 100%;
+  padding-top: $nav-height;
 }
 
 a {
