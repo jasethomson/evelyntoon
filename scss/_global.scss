@@ -23,11 +23,16 @@ a {
   color: $font-color;
   &:hover {
     text-decoration: none;
+    color: $font-color-dark;
   }
 }
 
 button {
   width: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .hidden {

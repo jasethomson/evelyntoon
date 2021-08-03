@@ -1,3 +1,5 @@
+$small: 768px;
+
 header {
   position: fixed;
   width: 100%;
@@ -9,14 +11,38 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: $nav-border;
+    .hideNav {
+      display: flex;
+      @media screen and (max-width: $small) {
+        display: none !important;
+      }
+
+    }
     .headerTitle {
         font-size: 2rem;
+    }
+    .fa-bars,
+    .fa-times {
+      display: none;
+      @media screen and (max-width: $small) {
+        display: flex;
+      }
+    }
+    .nav-name {
+      display: none;
+      @media screen and (max-width: $small) {
+        display: flex;
+      }
     }
     nav {
       height: 100%;
       width: 100%;
-      display: flex;
       justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+      @media screen and (max-width: $small) {
+        flex-direction: column;
+      }
       .insert-101 {
         display: flex;
         align-items: center;
@@ -31,6 +57,10 @@ header {
         border-left: $nav-vertical-border;
         border-right: $nav-vertical-border;
         background-color: $fifth-color;
+        display: flex;
+        @media screen and (max-width: $small) {
+          display: none !important;
+        }
         h3 {
           margin: 0px;
           padding: 0rem .5rem;
@@ -39,11 +69,15 @@ header {
       ul {
         height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: space-around;
         list-style-type: none;
         padding-left: 0rem;
         margin: 0rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        @media screen and (max-width: $small) {
+          flex-direction: column;
+        }
         li {
           height: 100%;
           display: flex;
