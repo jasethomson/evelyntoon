@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from '../components/header';
+import Modal from '../components/modal';
 
 const Work = props => {
   return (
     <div className="page page-work">
       <div className="insert-100 insert-100-a">
         <div className="insert-100-insert-a">
+
           <Header title="My Portfolio" />
         </div>
         <div className="insert-100-insert-b">
@@ -34,10 +36,22 @@ const Work = props => {
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
-                <img src="images/roseheads.png" alt="Amazon A+ Content Rose Heads" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Amazon A+ Content Copy - Artificial Rose Heads"}
+                  buttonLabel={<img src="images/roseheads.png" alt="Amazon A+ Content Rose Heads" />}
+                  modalBody={<img src="images/roseheads.png" alt="Amazon A+ Content Rose Heads" />}
+                  className="work-modal image-modal"
+                />
               </div>
               <div className="insert-104 insert-104-b">
-                <img src="images/roseheadsCopy.png" alt="Amazon A+ Content Rose Heads" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Amazon A+ Content Copy - Rose Heads"}
+                  buttonLabel={<img src="images/roseheadsCopy.png" alt="Amazon A+ Content Rose Heads" />}
+                  modalBody={<img src="images/roseheadsCopy.png" alt="Amazon A+ Content Rose Heads" />}
+                  className="work-modal image-modal"
+                />
               </div>
             </div>
           </div>
@@ -55,10 +69,22 @@ const Work = props => {
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
-                <img src="images/notebooks.png" alt="Amazon A+ Notebooks" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Amazon A+ Content Copy - Notebooks"}
+                  buttonLabel={<img src="images/notebooks.png" alt="Amazon A+ Notebooks" />}
+                  modalBody={<img src="images/notebooks.png" alt="Amazon A+ Notebooks" />}
+                  className="work-modal image-modal"
+                />
               </div>
               <div className="insert-104 insert-104-b">
-                <img src="images/notebooksCopy.png" alt="Amazon A+ Notebooks" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Amazon A+ Content Copy - Notebooks"}
+                  buttonLabel={<img src="images/notebooksCopy.png" alt="Amazon A+ Notebooks" />}
+                  modalBody={<img src="images/notebooksCopy.png" alt="Amazon A+ Notebooks" />}
+                  className="work-modal image-modal"
+                />
               </div>
             </div>
           </div>
@@ -76,7 +102,13 @@ const Work = props => {
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
-                <img src="images/sewingBasket.png" alt="Juvo Plus Product Description Page - Sewing Basket" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Juvo Plus Product Description Page - Sewing Basket"}
+                  buttonLabel={<img src="images/sewingBasket.png" alt="Juvo Plus Product Description Page - Sewing Basket" />}
+                  modalBody={<img src="images/sewingBasket.png" alt="Juvo Plus Product Description Page - Sewing Basket" />}
+                  className="work-modal image-modal"
+                />
               </div>
             </div>
           </div>
@@ -86,13 +118,32 @@ const Work = props => {
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
-                <img src="images/torridPaidAds.png" alt="Torrid Paid Ads First Example" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Torrid Paid Ads"}
+                  buttonLabel={<img src="images/torridPaidAds.png" alt="Torrid Paid Ads First Example" />}
+                  modalBody={<img src="images/torridPaidAds.png" alt="Torrid Paid Ads First Example" />}
+                  className="work-modal image-modal"
+                />
               </div>
               <div className="insert-104 insert-104-b">
-                <img src="images/torridPaidAds2.png" alt="Torrid Paid Ads Second Example" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Torrid Paid Ads"}
+                  buttonLabel={<img src="images/torridPaidAds2.png" alt="Torrid Paid Ads Second Example" />}
+                  modalBody={<img src="images/torridPaidAds2.png" alt="Torrid Paid Ads Second Example" />}
+                  className="work-modal image-modal"
+                />
+
               </div>
               <div className="insert-104 insert-104-c">
-                <img src="images/torridPaidAds3.png" alt="Torrid Paid Ads Third Example" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Torrid Paid Ads"}
+                  buttonLabel={<img src="images/torridPaidAds3.png" alt="Torrid Paid Ads Third Example" />}
+                  modalBody={<img src="images/torridPaidAds3.png" alt="Torrid Paid Ads Third Example" />}
+                  className="work-modal image-modal"
+                />
               </div>
             </div>
           </div>
@@ -102,26 +153,56 @@ const Work = props => {
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
-                <img src="images/torridPdp1.png" alt="Torrid PDP First Example" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Torrid Product Description Pages (PDP)"}
+                  buttonLabel={<img src="images/torridPdp1.png" alt="Torrid PDP First Example" />}
+                  modalBody={<img src="images/torridPdp1.png" alt="Torrid PDP First Example" />}
+                  className="work-modal image-modal"
+                />
               </div>
               <div className="insert-104 insert-104-b">
-                <img src="images/torridPdp2.png" alt="Torrid PDP Second Example" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Torrid Product Description Pages (PDP)"}
+                  buttonLabel={<img src="images/torridPdp2.png" alt="Torrid PDP Second Example" />}
+                  modalBody={<img src="images/torridPdp2.png" alt="Torrid PDP Second Example" />}
+                  className="work-modal image-modal"
+                />
               </div>
             </div>
           </div>
           <div className="insert-102 insert-102-f">
             <div className="insert-103 insert-103-a">
-              <h4>Unique Vintage Product Description Pages (PDPs))</h4>
+              <h4>Unique Vintage Product Description Pages (PDPs)</h4>
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
-                <img src="images/uvPdp1.png" alt="Unique Vintage PDP First Example" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Unique Vintage Product Description Pages (PDP)"}
+                  buttonLabel={<img src="images/uvPdp1.png" alt="Unique Vintage PDP First Example" />}
+                  modalBody={<img src="images/uvPdp1.png" alt="Unique Vintage PDP First Example" />}
+                  className="work-modal image-modal"
+                />
               </div>
               <div className="insert-104 insert-104-b">
-                <img src="images/uvPdp2.png" alt="Unique Vintage PDP Second Example" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Unique Vintage Product Description Pages (PDP)"}
+                  buttonLabel={<img src="images/uvPdp2.png" alt="Unique Vintage PDP Second Example" />}
+                  modalBody={<img src="images/uvPdp2.png" alt="Unique Vintage PDP Second Example" />}
+                  className="work-modal image-modal"
+                />
               </div>
               <div className="insert-104 insert-104-c">
-                <img src="images/uvPdp3.png" alt="Unique Vintage PDP Third Example" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Unique Vintage Product Description Pages (PDP)"}
+                  buttonLabel={<img src="images/uvPdp3.png" alt="Unique Vintage PDP Third Example" />}
+                  modalBody={<img src="images/uvPdp3.png" alt="Unique Vintage PDP Third Example" />}
+                  className="work-modal image-modal"
+                />
               </div>
             </div>
           </div>
@@ -141,13 +222,31 @@ const Work = props => {
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
-                <img src="images/torridMailer1.png" alt="Torrid Spring 2020 Mailer First Example" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Torrid Spring 2020 Mailer"}
+                  buttonLabel={<img src="images/torridMailer1.png" alt="Torrid Spring 2020 Mailer First Example" />}
+                  modalBody={<img src="images/torridMailer1.png" alt="Torrid Spring 2020 Mailer First Example" />}
+                  className="work-modal image-modal"
+                />
               </div>
               <div className="insert-104 insert-104-b">
-                <img src="images/torridMailer2.png" alt="Torrid Spring 2020 Mailer Second Example" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Torrid Spring 2020 Mailer"}
+                  buttonLabel={<img src="images/torridMailer2.png" alt="Torrid Spring 2020 Mailer Second Example" />}
+                  modalBody={<img src="images/torridMailer2.png" alt="Torrid Spring 2020 Mailer Second Example" />}
+                  className="work-modal image-modal"
+                />
               </div>
               <div className="insert-104 insert-104-c">
-                <img src="images/torridMailer3.png" alt="Torrid Spring 2020 Mailer Third Example" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Torrid Spring 2020 Mailer"}
+                  buttonLabel={<img src="images/torridMailer3.png" alt="Torrid Spring 2020 Mailer Third Example" />}
+                  modalBody={<img src="images/torridMailer3.png" alt="Torrid Spring 2020 Mailer Third Example" />}
+                  className="work-modal image-modal"
+                />
               </div>
             </div>
           </div>
@@ -167,7 +266,13 @@ const Work = props => {
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
-                <img src="images/torridStarWars.png" alt="Torrid Email - Star Wars" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Torrid Email - Star Wars"}
+                  buttonLabel={<img src="images/torridStarWars.png" alt="Torrid Email - Star Wars" />}
+                  modalBody={<img src="images/torridStarWars.png" alt="Torrid Email - Star Wars" />}
+                  className="work-modal image-modal"
+                />
               </div>
             </div>
           </div>
@@ -177,7 +282,13 @@ const Work = props => {
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
-                <img src="images/torridCinderella.png" alt="Torrid Instagram Story - Cinderella" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Torrid Instagram Story - Cinderella"}
+                  buttonLabel={<img src="images/torridCinderella.png" alt="Torrid Instagram Story - Cinderella" />}
+                  modalBody={<img src="images/torridCinderella.png" alt="Torrid Instagram Story - Cinderella" />}
+                  className="work-modal image-modal"
+                />
               </div>
             </div>
           </div>
@@ -187,7 +298,13 @@ const Work = props => {
             </div>
             <div className="insert-103 insert-103-b">
               <div className="insert-104 insert-104-a">
-                <img src="images/birdsOfPrey.png" alt="Torrid Instagram Story - Birds of Prey" />
+                <Modal
+                  size={"xl"}
+                  modalHeader={"Torrid Instagram Story - Birds of Prey"}
+                  buttonLabel={<img src="images/birdsOfPrey.png" alt="Torrid Instagram Story - Birds of Prey" />}
+                  modalBody={<img src="images/birdsOfPrey.png" alt="Torrid Instagram Story - Birds of Prey" />}
+                  className="work-modal image-modal"
+                />
               </div>
             </div>
           </div>

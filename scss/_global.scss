@@ -15,19 +15,24 @@ body {
 }
 
 .page {
-  height: calc(100% - (#{$nav-height} + #{$nav-border-height}));
-  padding-top: calc(#{$nav-height} + #{$nav-border-height});
+  height: 100%;
+  padding-top: $nav-height;
 }
 
 a {
   color: $font-color;
   &:hover {
     text-decoration: none;
+    color: $font-color-dark;
   }
 }
 
 button {
   width: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .hidden {
@@ -69,3 +74,10 @@ h5{
 h1, h2, h3, h4, h5, h6 {
   margin: 0rem;
 }
+
+.modalOpener {
+  padding: 0rem;
+  border: none;
+}
+
+body { padding-right: 0 !important }

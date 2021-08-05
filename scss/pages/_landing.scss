@@ -1,16 +1,28 @@
 $currPage: page-landing;
 
+$small: 768px;
+$medium: 1100px;
+
 .#{$currPage} {
   display: flex;
   flex-direction: row;
-  .insert-101 {
-    height: 100%;
-    width: 100%;
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
   }
   .insert-101-a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    @media screen and (max-width: $medium) {
+      height: 20%;
+      display: flex;
+    }
     .insert-102-a {
+      width: fit-content;
       margin: 13rem auto;
-      max-width: 92%;
+      @media screen and (max-width: $medium) {
+        margin: auto;
+      }
       h1 {
         font-size: 5vw;
         text-align: center;
@@ -19,6 +31,9 @@ $currPage: page-landing;
         padding: 0;
         color: $first-color;
         text-shadow: 4px 3px $second-color;
+        @media screen and (max-width: $medium) {
+          text-shadow: 0px 0px $second-color;
+        }
       }
     }
   }
@@ -26,25 +41,31 @@ $currPage: page-landing;
     display: flex;
     justify-content: center;
     background: $first-color;
+    height: 100%;
+    width: 100%;
+    @media screen and (max-width: $medium) {
+      height: 80%;
+    }
     .insert-103-a {
-      padding-top: 16rem;
       justify-content: space-around;
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-top: 16rem;
+      @media screen and (max-width: $medium) {
+        padding-top: 6rem;
+      }
       .insert-104 {
         padding-bottom: 2.4rem;
         a {
           letter-spacing: 5px;
           white-space: nowrap;
-          font-size: 1.4em;
           background-color: $fifth-color;
           outline: none;
           border: $second-color solid 2px;
           box-shadow: 4px 4px $second-color;
           padding: 16px 15px;
           font-family: 'Futura', sans-serif;
-          min-width: 310px;
           position: relative;
           transition: 400ms;
           font-weight: lighter;
@@ -52,16 +73,33 @@ $currPage: page-landing;
           text-align: center;
           align-items: flex-start;
           text-decoration: none;
+          min-width: 310px;
+          font-size: 1.4em;
+          @media screen and (max-width: $medium) {
+            width: 24vw;
+            min-width: 225px;
+            font-size: 1rem;
+          }
           &:hover {
             background-color: $first-color;
+            color: $font-color-dark;
           }
         }
       }
     }
     .insert-104-c {
-      font-size: 21px;
       padding-bottom: 0rem;
       border-top: 3px solid $second-color;
+      font-size: 21px;
+      max-width: unset;
+      text-align: left;
+      @media screen and (max-width: $medium) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: $small) {
+        max-width: 342px;
+        text-align: center;
+      }
       p {
         margin: 0px;
         margin-top: 3vw;
