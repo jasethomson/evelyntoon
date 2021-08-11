@@ -11,6 +11,9 @@ const Nav = () => {
   const handleChange = () => {
     let nav = hide.nav === "hideNav" ? 'showNav' : "hideNav";
     let hamburger = hide.hamburger === "hideNav" ? 'showNav' : "hideNav";
+    nav === "showNav" ?
+      document.getElementsByTagName('header')[0].classList.add('showNav') :
+      document.getElementsByTagName('header')[0].classList.remove('showNav');
     setHide({
       hamburger: hamburger,
       nav: nav
@@ -22,21 +25,23 @@ const Nav = () => {
     <React.Fragment>
       <i className={`fas fa-bars fa-2x cursor-pointer ${hide.hamburger}`} onClick={handleChange}></i>
       <h3 className={`nav-name ${hide.hamburger}`}>Evelyn Toon</h3>
-      <i className={`fas fa-times fa-2x cursor-pointer ${hide.nav}`} onClick={handleChange}></i>
       <nav className={`${hide.nav}`}>
-        <div className="insert-101 insert-101-a">
-          <ul>
-            {routes.map(route => <li key={`link-${route.title}`}><Link to={route.path}>{route.title}</Link></li>)}
-          </ul>
+        <div className="insert-nav-inner">
+          <div className="insert-101 insert-101-a">
+            <ul>
+              {routes.map(route => <li onClick={handleChange} key={`link-${route.title}`}><Link to={route.path}>{route.title}</Link></li>)}
+            </ul>
+          </div>
+          <div className="insert-101 insert-101-b">
+            <h3>Evelyn Toon</h3>
+          </div>
+          <div className="insert-101 insert-101-c">
+            <ul>
+              {postRoutes.map(route => <li onClick={handleChange} key={`link-${route.title}`}><HashLink to={route.path}>{route.title}</HashLink></li>)}
+            </ul>
+          </div>
         </div>
-        <div className="insert-101 insert-101-b">
-          <h3>Evelyn Toon</h3>
-        </div>
-        <div className="insert-101 insert-101-c">
-          <ul>
-            {postRoutes.map(route => <li key={`link-${route.title}`}><HashLink to={route.path}>{route.title}</HashLink></li>)}
-          </ul>
-        </div>
+        <i className={`fas fa-times fa-2x cursor-pointer ${hide.nav}`} onClick={handleChange}></i>
       </nav>
     </React.Fragment>
   );
