@@ -31,12 +31,7 @@ module.exports = {
   devServer: {
     contentBase: publicPath,
     historyApiFallback: true,
-    host: '0.0.0.0',
-    port: process.env.DEV_SERVER_PORT,
-    proxy: {
-      '/api': `http://localhost:${process.env.PORT}`
-    },
-    stats: 'minimal',
+    hot: true,
     watchContentBase: true
   }
 }
