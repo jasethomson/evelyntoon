@@ -34,7 +34,7 @@ const About = props => {
       <div className="insert-101 insert-101-b">
         <div className="insert-inner">
           <div className="insert-102 insert-102-a">
-            <img src="images/evelynToon.jpg" alt="Evelyn Toon image" />
+            <img src="images/evelynToon.JPG" alt="Evelyn Toon image" />
           </div>
         </div>
       </div>
