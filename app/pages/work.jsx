@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/header';
 import Modal from '../components/modal';
+import { pageLoadHtmlClsChk } from '../components/tools';
 
 const Work = props => {
+
+  useEffect(() => {
+    pageLoadHtmlClsChk('work');
+  }, []);
   return (
     <div className="page page-work">
       <div className="insert-100 insert-100-a">

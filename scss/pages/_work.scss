@@ -1,54 +1,90 @@
 $currPage: page-work;
+$htmlPage: html-work;
 
-.#{$currPage} {
-  background: #f5eee9;
-  height: auto;
-  .insert-100 {
-
-    margin-top: 2rem;
+.#{$htmlPage} {
+  background: $fifth-color;
+  .header {
+    min-height: 56px;
   }
-  .insert-100-insert-a,
-  .insert-100-insert-b {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .insert-100-insert-b {
-    margin-top: 2rem;
-  }
-  img {
-    max-height: 400px;
-  }
-  section {
-    max-width: 84%;
-    margin: 0rem auto;
-    padding-top: 96px;
-    .insert-101 {
-      margin-top: 1rem;
+  body {
+    background: $fifth-color;
+    height: 100%;
+    @media screen and (max-width: $medium) {
+      height: auto;
     }
-    .insert-101-a {
-      margin-top: 0rem;
-    }
-    .insert-101-b {
-      font-weight: bold;
-      margin-bottom: 4rem;
-    }
-    .insert-101-c {
-      .insert-103-a {
-        margin: 1rem 0rem;
-        span {
-          margin-right: .5rem;
-          font-weight: bold;
-        }
+    .#{$currPage} {
+      background: #f5eee9;
+      height: auto;
+      .insert-100 {
+        margin-top: 2rem;
       }
-      .insert-102 {
-        margin-bottom: 6rem;
-        .insert-103-b {
-          display: flex;
-          flex-direction: row;
+      .insert-100-a {
+        @media screen and (max-width: $small) {
+
         }
-        .insert-104 {
-          margin-right: 4rem;
+        padding: 0rem 1rem;
+      }
+      .insert-100-insert-a,
+      .insert-100-insert-b {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .insert-100-insert-b {
+        margin-top: 2rem;
+      }
+      img {
+        max-height: 400px;
+      }
+      section {
+        max-width: 84%;
+        margin: 0rem auto;
+        padding-top: 96px;
+        @media screen and (max-width: $small) {
+          padding-top: 22px;
+        }
+        .insert-101 {
+          margin-top: 1rem;
+        }
+        .insert-101-a {
+          margin-top: 0rem;
+        }
+        .insert-101-b {
+          font-weight: bold;
+          margin-bottom: 4rem;
+          @media screen and (max-width: $small) {
+            margin-bottom: 2rem;
+          }
+        }
+        .insert-101-c {
+          .insert-103-a {
+            margin: 1rem 0rem;
+            span {
+              margin-right: .5rem;
+              font-weight: bold;
+            }
+          }
+          .insert-102 {
+            margin-bottom: 6rem;
+            @media screen and (max-width: $small) {
+              margin-bottom: 0rem;
+            }
+            .insert-103-b {
+              display: flex;
+              flex-direction: row;
+              @media screen and (max-width: $small) {
+                flex-direction: column;
+                align-items: center;
+              }
+            }
+            .insert-104 {
+              margin-right: 4rem;
+              @media screen and (max-width: $small) {
+                margin-right: 0rem;
+                margin-bottom: 2rem;
+              }
+            }
+          }
         }
       }
     }

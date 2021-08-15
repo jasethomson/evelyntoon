@@ -1,3 +1,7 @@
+//media breaks
+$small: 767px;
+$medium: 1099px;
+
 //colors
 $first-color: #e3bb9d;
 $second-color: #a75e2f;
@@ -32,9 +36,3 @@ $h3-headline: 1.75rem; //28px
 $h4-headline: 1.5rem; //24px
 $h5-headline: 1.25rem; //20px
 $h6-headline: 1rem; //16px
-$h1-headline-fluid: calc(22px + (40 - 22) * ((100vw - 300px) / (1600 - 300))) !global;
-$h2-headline-fluid: calc(22px + (32 - 22) * ((100vw - 300px) / (1600 - 300))) !global;
-$h3-headline-fluid: calc(22px + (28 - 22) * ((100vw - 300px) / (1600 - 300))) !global;
-$h4-headline-fluid: calc(22px + (24 - 22) * ((100vw - 300px) / (1600 - 300))) !global;
-$h5-headline-fluid: calc(22px + (20 - 22) * ((100vw - 300px) / (1600 - 300))) !global;
-$h6-headline-fluid: calc(22px + (16 - 22) * ((100vw - 300px) / (1600 - 300))) !global;

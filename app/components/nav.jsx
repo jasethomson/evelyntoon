@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Routes, PostRoutes } from '../utils/routes';
 import { HashLink } from 'react-router-hash-link';
+import { addHtmlCls } from './tools';
 
 const Nav = () => {
   const [hide, setHide] = useState({
     hamburger: 'showNav',
     nav: 'hideNav'
   });
-  const handleChange = () => {
+  const handleChange = path => {
     let nav = hide.nav === "hideNav" ? 'showNav' : "hideNav";
     let hamburger = hide.hamburger === "hideNav" ? 'showNav' : "hideNav";
     nav === "showNav" ?
@@ -18,6 +19,7 @@ const Nav = () => {
       hamburger: hamburger,
       nav: nav
     });
+    addHtmlCls(path);
   }
   const routes = Routes(true);
   const postRoutes = PostRoutes(true);
@@ -29,7 +31,7 @@ const Nav = () => {
         <div className="insert-nav-inner">
           <div className="insert-101 insert-101-a">
             <ul>
-              {routes.map(route => <li onClick={handleChange} key={`link-${route.title}`}><Link to={route.path}>{route.title}</Link></li>)}
+              {routes.map(route => <li onClick={() => handleChange(route.path)} key={`link-${route.title}`}><Link to={route.path}>{route.title}</Link></li>)}
             </ul>
           </div>
           <div className="insert-101 insert-101-b">
@@ -37,11 +39,11 @@ const Nav = () => {
           </div>
           <div className="insert-101 insert-101-c">
             <ul>
-              {postRoutes.map(route => <li onClick={handleChange} key={`link-${route.title}`}><HashLink to={route.path}>{route.title}</HashLink></li>)}
+              {postRoutes.map(route => <li onClick={() => handleChange(route.path)} key={`link-${route.title}`}><HashLink to={route.path}>{route.title}</HashLink></li>)}
             </ul>
           </div>
         </div>
-        <i className={`fas fa-times fa-2x cursor-pointer ${hide.nav}`} onClick={handleChange}></i>
+        <i className={`fas fa-times fa-2x cursor-pointer ${hide.nav}`} onClick={() => handleChange(route.path)}></i>
       </nav>
     </React.Fragment>
   );

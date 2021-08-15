@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/header';
+import { pageLoadHtmlClsChk } from '../components/tools';
 
 const Landing = props => {
+  useEffect(() => {
+    pageLoadHtmlClsChk('landing');
+  }, []);
   return (
+
     <div className="page page-landing">
       <div className="insert-101 insert-101-a">
         <Header className="insert-102 insert-102-a" title={"CONTENT COORDINATOR"} />
