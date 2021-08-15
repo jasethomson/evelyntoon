@@ -10,6 +10,7 @@ const Nav = () => {
     nav: 'hideNav'
   });
   const handleChange = path => {
+    console.log('nav handleChange', path);
     let nav = hide.nav === "hideNav" ? 'showNav' : "hideNav";
     let hamburger = hide.hamburger === "hideNav" ? 'showNav' : "hideNav";
     nav === "showNav" ?
@@ -31,7 +32,7 @@ const Nav = () => {
         <div className="insert-nav-inner">
           <div className="insert-101 insert-101-a">
             <ul>
-              {routes.map(route => <li onClick={() => handleChange(route.path)} key={`link-${route.title}`}><Link to={route.path}>{route.title}</Link></li>)}
+              {routes.map(route => <li key={`link-${route.title}`}><Link onClick={() => handleChange(route.path)} to={route.path}>{route.title}</Link></li>)}
             </ul>
           </div>
           <div className="insert-101 insert-101-b">
@@ -39,7 +40,7 @@ const Nav = () => {
           </div>
           <div className="insert-101 insert-101-c">
             <ul>
-              {postRoutes.map(route => <li onClick={() => handleChange(route.path)} key={`link-${route.title}`}><HashLink to={route.path}>{route.title}</HashLink></li>)}
+              {postRoutes.map(route => <li key={`link-${route.title}`}><HashLink onClick={() => handleChange(route.path)} to={route.path}>{route.title}</HashLink></li>)}
             </ul>
           </div>
         </div>
