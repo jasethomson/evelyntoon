@@ -106,22 +106,24 @@ header {
   }
 }
 header.showNav {
-  z-index: 1;
-  .headerInner {
-    height: 100vh;
-    padding: 0rem;
-    nav {
-      background: $background-color;
-      .insert-nav-inner {
-        height: fit-content;
+  @media screen and (max-width: $small) {
+    z-index: 1;
+    .headerInner {
+      height: 100vh;
+      padding: 0rem;
+      nav {
+        background: $background-color;
+        .insert-nav-inner {
+          height: fit-content;
+        }
+        li {
+          border-bottom: $nav-vertical-border;
+          margin-left: 1rem;
+        }
+        .fa-times {
+          padding: .5rem;
+        };
       }
-      li {
-        border-bottom: $nav-vertical-border;
-        margin-left: 1rem;
-      }
-      .fa-times {
-        padding: .5rem;
-      };
     }
   }
 }

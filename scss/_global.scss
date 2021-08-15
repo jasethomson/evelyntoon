@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  height: auto;
   background: $background-color;
 }
 
@@ -78,6 +79,11 @@ h1, h2, h3, h4, h5, h6 {
 .modalOpener {
   padding: 0rem;
   border: none;
+}
+
+p {
+  margin: 0rem;
+  padding-bottom: 1rem;
 }
 
 body { padding-right: 0 !important }
