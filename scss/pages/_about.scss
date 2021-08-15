@@ -1,47 +1,75 @@
 $currPage: page-about;
+$htmlPage: html-about;
 
-.#{$currPage} {
-  display: flex;
-  flex-direction: row;
-  h1 {
-    color: #914C39;
+.#{$htmlPage} {
+  background: $fifth-color;
+  .header {
+    min-height: 56px;
   }
-  p {
-    color: $third-color;
-    font-size: 22px;
-    line-height: 32px;
-    font-weight: 600;
-  }
-  .insert-101 {
+  body {
+    background: $fifth-color;
     height: 100%;
-    width: 100%;
-  }
-  .insert-101-a {
-    .insert-innner {
-      margin: 3rem 5rem;
+    @media screen and (max-width: $medium) {
+      height: auto;
     }
-    li {
-      font-size: 15px;
-      line-height: 24px;
-
-    font-weight: 600;
+    .#{$currPage} {
+      display: flex;
+      flex-direction: row;
+      @media screen and (max-width: $medium) {
+        flex-direction: column-reverse;
+        height: auto;
+      }
+      h1 {
+        color: #914C39;
+      }
       p {
-        font-size: 15px;
-        line-height: 24px;
+        color: $third-color;
+        font-size: 22px;
+        line-height: 32px;
         font-weight: 600;
       }
-    }
-  }
-  .insert-101-b {
-    .insert-inner {
-      margin-top: 8rem;
-    }
-    .insert-102 {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      img {
-        height: 24vw;
+      .insert-101 {
+        height: 100%;
+        width: 100%;
+        padding: 3rem 5rem;
+        @media screen and (max-width: $small) {
+          padding: 1rem;
+        }
+      }
+      .insert-101-a {
+        li {
+          font-size: 15px;
+          line-height: 24px;
+
+        font-weight: 600;
+          p {
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 600;
+          }
+        }
+      }
+      .insert-101-b {
+        .insert-inner {
+          padding-top: 3rem;
+          @media screen and (max-width: $small) {
+          padding: 0rem;
+        }
+        }
+        .insert-102 {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          img {
+            height: 24vw;
+            min-width: 300px;
+            min-height: 370px;
+            @media screen and (max-width: $small) {
+              min-width: 270px;
+              min-height: 302px;
+            }
+          }
+        }
       }
     }
   }

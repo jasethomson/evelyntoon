@@ -1,13 +1,20 @@
 html {
   height: 100%;
+  @media screen and (max-width: $small) {
+    height: auto;
+  }
   background: $background-color;
 }
 
 body {
   margin: 0;
   height: 100%;
+  @media screen and (max-width: $medium) {
+    height: auto;
+  }
   font-family: $first-font;
   color: $font-color;
+  background: $fifth-color;
 }
 
 #app {
@@ -16,7 +23,7 @@ body {
 
 .page {
   height: 100%;
-  padding-top: $nav-height;
+  padding-top: 94px;
 }
 
 a {
@@ -52,23 +59,23 @@ img {
 }
 
 h1{
-  font-size: $h1-headline-fluid;
+  font-size: $h1-headline;
 }
 
 h2{
-  font-size: $h2-headline-fluid;
+  font-size: $h2-headline;
 }
 
 h3{
-  font-size: $h3-headline-fluid;
+  font-size: $h3-headline;
 }
 
 h4{
-  font-size: $h4-headline-fluid;
+  font-size: $h4-headline;
 }
 
 h5{
-  font-size: $h5-headline-fluid;
+  font-size: $h5-headline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -78,6 +85,11 @@ h1, h2, h3, h4, h5, h6 {
 .modalOpener {
   padding: 0rem;
   border: none;
+}
+
+p {
+  margin: 0rem;
+  padding-bottom: 1rem;
 }
 
 body { padding-right: 0 !important }

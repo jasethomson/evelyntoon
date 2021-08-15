@@ -4,9 +4,7 @@ const SiteFooter = props => {
   return (
     <footer>
       <div className="footerContent">
-        <div className="footerTop">
-          <p></p>
-        </div>
+        <div className="footerTop"></div>
         <div className="footerBottom">
         </div>
       </div>

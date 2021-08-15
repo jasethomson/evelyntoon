@@ -1,31 +1,60 @@
 $currPage: page-contact;
+$htmlPage: html-contact;
 
-.#{$currPage} {
-
-  .insert-101 {
-    width: fit-content;
-    margin: 0rem auto;
+.#{$htmlPage} {
+  background: $fifth-color;
+  .header {
+    min-height: 56px;
   }
-  .insert-101-a {
-    padding: 75px 0px;
-    h1 {
-      font-size: 3.5em;
+  body {
+    background: $fifth-color;
+    height: 100%;
+    @media screen and (max-width: $medium) {
+      height: auto;
     }
-  }
-  .insert-101-b {
-    min-width: 400px;
-    padding: 40px;
-    border:  $second-color solid 2px;
-    box-shadow: -4px 4px  $second-color;
+    .#{$currPage} {
+        @media screen and (max-width: $medium) {
+        height: auto;
+      }
+      .insert-101 {
+        width: fit-content;
+        margin: 0rem auto;
+      }
+      .insert-101-a {
+        text-align: center;
+        padding: 75px 0px;
+        @media screen and (max-width: $small){
+          padding: 1rem;
+        }
+        h1 {
+          font-size: 3.5em;
+          @media screen and (max-width: $small) {
+            font-size: 2rem;
+          }
+        }
+      }
+      .insert-101-b {
+        min-width: 400px;
+        @media screen and (max-width: $small) {
+          min-width: 300px;
+        }
+        padding: 40px;
+        @media screen and (max-width: $small)  {
+          padding: 1rem;
+        }
+        border:  $second-color solid 2px;
+        box-shadow: -4px 4px  $second-color;
 
-    .insert-102 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: .5rem 0rem;
-      .insert-103-b {
-        a {
-          font-weight: 600;
+        .insert-102 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: .5rem 0rem;
+          .insert-103-b {
+            a {
+              font-weight: 600;
+            }
+          }
         }
       }
     }

@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { pageLoadHtmlClsChk } from '../components/tools';
 
 const Contact = props => {
+  useEffect(() => {
+    pageLoadHtmlClsChk('contact');
+  }, []);
   return (
     <div className="page page-contact">
       <div className="insert-101 insert-101-a">

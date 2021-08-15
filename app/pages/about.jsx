@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/header';
+import { pageLoadHtmlClsChk } from '../components/tools';
 
 const About = props => {
+  useEffect(() => {
+    pageLoadHtmlClsChk('about');
+  }, []);
   return (
     <div className="page page-about">
       <div className="insert-101 insert-101-a">
