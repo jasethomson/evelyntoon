@@ -20,7 +20,7 @@ const Landing = props => {
               <Link to="/work">View My Work</Link>
             </div>
             <div className="insert-104 insert-104-b">
-              <a target="_blank" href="resume.pdf">My Resume</a>
+              <a target="_blank" href="evelynToonResume.pdf">My Resume</a>
             </div>
 
             <div className="insert-104 insert-104-c">
