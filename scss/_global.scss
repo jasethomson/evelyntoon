@@ -29,8 +29,10 @@ body {
 a {
   color: $font-color;
   &:hover {
-    text-decoration: none;
-    color: $font-color-dark;
+    @media screen and (min-width: $small) {
+      text-decoration: none;
+      color: $font-color-dark;
+    }
   }
 }
 
