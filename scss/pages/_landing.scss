@@ -17,7 +17,10 @@ $htmlPage: html-landing;
       .insert-101-a {
         width: 100%;
         height: 100%;
-        display: block;
+        // display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: $fifth-color;
         @media screen and (max-width: $medium) {
           height: 20%;
@@ -29,7 +32,7 @@ $htmlPage: html-landing;
         }
         .insert-102-a {
           width: fit-content;
-          margin: 13rem auto;
+          // margin: 13rem auto;
           @media screen and (max-width: $medium) {
             margin: auto;
           }
@@ -53,6 +56,8 @@ $htmlPage: html-landing;
         background: $first-color;
         height: 100%;
         width: 100%;
+        align-items: center;
+        justify-content: center;
         @media screen and (max-width: $medium) {
           height: 80%;
         }
@@ -61,7 +66,7 @@ $htmlPage: html-landing;
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding-top: 16rem;
+          // padding-top: 16rem;
           @media screen and (max-width: $medium) {
             padding-top: 6rem;
           }
