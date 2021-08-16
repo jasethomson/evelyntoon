@@ -30,6 +30,8 @@ header {
       display: none;
       @media screen and (max-width: $small) {
         display: flex;
+        width: 100%;
+        justify-content: center;
       }
     }
     nav {
@@ -98,7 +100,9 @@ header {
             font-weight: 600;
             font-size: $nav-font;
             &:hover {
-              color: $font-color-dark;
+              @media screen and (min-width: $small) {
+                color: $font-color-dark;
+              }
             }
           }
         }

@@ -91,8 +91,10 @@ $htmlPage: html-landing;
                 font-size: 1rem;
               }
               &:hover {
-                background-color: $first-color;
-                color: $font-color-dark;
+                @media screen and (min-width: $small) {
+                  background-color: $first-color;
+                  color: $font-color-dark;
+                }
               }
             }
           }
