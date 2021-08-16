@@ -64,6 +64,9 @@ $htmlPage: html-landing;
           height: 80%;
           min-height: 80vh;
         }
+        @media screen and (max-width: $medium) {
+          align-items: flex-start;
+        }
         .insert-103-a {
           justify-content: space-around;
           display: flex;
